@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея работ</title>
+    <link rel="icon" href="image/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cover-car-parsing">
+            <header class="header">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="car-pasting.html">Оклейка автомобилей</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="car-detailing.html">Детейлинг автомобилей</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="gallery-of-works.html">Галерея работ</a>
+                        </li>
+                        <li>
+                            <div id="login-reg-container">
+                                <a href="#" class="button" id="show-modal-window">Вход</a>
+                                <a href="#" class="button">Регистрация</a>
+                            </div>
+                            <div id="modal-window" class="modal-window">
+                                <form action="#" id="login-form">
+                                    <h3 class="form-title">Форма авторизации</h3>
+                                        <div class="login-form-line">
+                                            <label for="login">Ваш логин</label>
+                                            <input type="text" class="input-border" id="login" required>
+                                        </div>
+                                <div class="login-form-line">
+                                    <label for="password">Ваш пароль</label>
+                                    <input type="password" class="input-border" id="password" required>
+                                </div>
+                                    <input type="submit" class="button" id="login-button" value="Войти">
+                                    <a href="#" class="button" id="hide-modal-window">Отмена</a>
+                                </form>
+                            </div>
+                            <script src="login.js"></script>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="preview">
+                <h1 class="cover-h1">ГАЛЕРЕЯ РАБОТЫ</h1>
+                <h4 class="cover-h4 cover-car-parsing-h4">На данной странице предоставлены работы нашего салона и отзывы.</h4>
+                <ul class="contact-info">
+                    <li class="contact-item">
+                        <p class="contact-heading">Адрес</p>
+                        <h6 class="contact-text">г. Москва, ул.Пушкина, дом Колотушкина</h6>
+                    </li>
+                    <li class="contact-item">
+                        <p class="contact-heading">Телефон</p>
+                        <h6 class="contact-text">
+                            <a class="number" href="tel:+78121234567">8 (812) 123-45-67</a>
+                            <br>
+                            <a class="number" href="tel:+79111234567">8 (911) 123-45-67</a>
+                        </h6>
+                    </li>
+                    <li class="contact-item">
+                        <p class="contact-heading">Режим работы:</p>
+                        <h6 class="contact-text">пн-пт : 10:00 - 20:00<br>сб-вск : 12:00 - 20:00</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h6 class="page-title">Примеры работ</h6>
+        <div class="slider-container">
+        <div class="slider">
+            <img src="image/gallery1.png" alt="детейлинг">
+            <img src="image/gallery2.png" alt="детейлинг">
+            <img src="image/gallery3.png" alt="оклейка">
+            <img src="image/gallery4.png" alt="оклейка">
+            <img src="image/gallery5.png" alt="оклейка">
+        </div>
+        <button class="prev-button" aria-label="Предыдущий слайд">&lt;</button>
+        <button class="next-button" aria-label="Следующий слайд">&gt</button>
+      </div>
+    </div>
+      
+      <script src="slider.js"></script>
+    <div class="container">
+        <h6>Отзывы</h6>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                    <span class="accordion-title">Михаил, оклейка</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>Оклейка моего автомобиля была выполнена идеально! Цвет и качество материала полностью соответствуют моим ожиданиям. Теперь моя машина выглядит стильно и защищена от царапин.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                    <span class="accordion-title">Александр, детейлинг</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>Обратился в этот центр детейлинга и остался приятно удивлен качеством работы. Моя машина преобразилась благодаря профессиональным мастерам. Очень доволен результатом!</p>
+                </div>
+            </div><div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                    <span class="accordion-title">Сергей, детейлинг</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>Отличный сервис детейлинга! Моему автомобилю было сделано полирование и химчистка салона, и теперь он выглядит, как только что выехавший из салона. Рекомендую!</p>
+                </div>
+            </div><div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                    <span class="accordion-title">Дмитрий, оклейка</span>
+                    <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                    <p>Я очень доволен результатом оклейки моей машины. Высококачественный материал, точное выполнение работы и внимательный подход к деталям делают этот сервис лучшим в своем деле!</p>
+                </div>
+            </div>
+        </div>
+        <script src="accordion.js"></script>
+    </div>
+    <div class="container">
+        <div class="footer">
+            <div class="footer-form">
+                <h3 class="advantages-h3 footer-h3">Ответим на любой вопрос</h3>
+                <div class="form">
+                    <div class="form-name-number">
+                        <div class="form-inputs">
+                            <input type="text" placeholder="Имя" id="name" style="width: 360px;">
+                        </div>
+                        <div class="form-inputs">
+                            <input type="text" placeholder="Номер телефона" id="number" style="width: 360px;">
+                        </div>
+                    </div>
+                    <div class="big-form">
+                        <div class="form-big-input">
+                            <input type="text" placeholder="Вопрос по дизайну, тюнингу и др." id="question" style="width: 800px;">
+                        </div>
+                    </div>
+                    <div class="form-button">
+                        <button class="button">Отправить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="car-pasting.html">Оклейка автомобилей</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="car-detailing.html">Детейлинг автомобилей</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="gallery-of-works.html">Галерея работ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
